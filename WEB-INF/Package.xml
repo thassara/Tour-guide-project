@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+
+
+	<servlet>
+		<servlet-name>Package_insertServlet</servlet-name>
+		<servlet-class>com.Package.Package_insertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Package_insertServlet</servlet-name>
+		<url-pattern>/Package_insertServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Package_readServlet</servlet-name>
+		<servlet-class>com.Package.Package_readServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Package_readServlet</servlet-name>
+		<url-pattern>/Package_readServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Allreadservlet</servlet-name>
+		<servlet-class>com.Package.Allreadservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Allreadservlet</servlet-name>
+		<url-pattern>/Allreadservlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Package_updateServlet</servlet-name>
+		<servlet-class>com.Package.Package_updateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Package_updateServlet</servlet-name>
+		<url-pattern>/Package_updateServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>packDeleteReader</servlet-name>
+		<servlet-class>com.Package.packDeleteReader</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>packDeleteReader</servlet-name>
+		<url-pattern>/packDeleteReader</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>PackageDeleteServlet</servlet-name>
+		<servlet-class>com.Package.PackageDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PackageDeleteServlet</servlet-name>
+		<url-pattern>/PackageDeleteServlet</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>PackageManagerloginservlet</servlet-name>
+		<servlet-class>com.Log.PackageManagerloginservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PackageManagerloginservlet</servlet-name>
+		<url-pattern>/PackageManagerloginservlet</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>DiscountinsertServlet</servlet-name>
+		<servlet-class>com.Log.DiscountinsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DiscountinsertServlet</servlet-name>
+		<url-pattern>/DiscountinsertServlet</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>  
