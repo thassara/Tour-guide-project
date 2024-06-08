@@ -22,15 +22,26 @@
         <input id="searchText" type="text" class="input-search" placeholder="Type to Search...">
     </div> 
     
-    <nav class="navbar">
+     <nav class="navbar">
         <a href="home1.jsp">Home</a>
-        <a href="Packages.jsp">Packages</a>
-        <a href="guide.html">Guides</a>
-        <a href="about.html">About</a>
-        <a href="review.html">Review</a>
-        <a href="control_page.html">Admin</a>
-        <button class="button"><a href="#"></a>Log in</button>
+  
+     <form action="Package_readServlet" method="post"><input type="submit" value="Package" class="nna"></form>
+
+
+        <a href="guide.jsp">Guides</a>
+        <a href="about.jsp">About</a>
+        <a href="review.jsp">Review</a>
+           <div class="dropdown">
+            <button class="dropbtn"><i ></i>Admins</button>
+            <div class="dropdown-content">
+                <a href="#">Admin</a>
+                <a href="PackageLogin.jsp">Package Manager</a>
+               
+            </div>
+        </div>
+        <button class="button"><a href="#"></a>Sign in</button>
     </nav>
+
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
@@ -56,7 +67,7 @@
     <div class="flex">
         <div class="inputbox">
             <Span>package name</Span>
-            <input type="text" value="<%= name %>" name="name" >
+            <input type="text" value="<%= name %>" name="name" requied>
         </div>
         <div class="inputbox">
             <Span>package ID</Span>
@@ -65,17 +76,17 @@
 
         <div class="inputbox">
             <Span>package Price USD $</Span>
-            <input type="number" value="<%= price %>" name="price">
+            <input type="number" value="<%= price %>" name="price" requied>
         </div>
 
         <div class="inputbox">
             <Span>Duration</Span>
-            <input type="number" value="<%= duration %>" name="duration">
+            <input type="number" value="<%= duration %>" name="duration" requied>
         </div>
 
         <div class="inputbox">
             <Span>images</Span>
-            <input type="file" name="images" value="<%= image %>">
+            <input type="file" name="images" value="<%= image %>" >
         </div>
 
         <div class="inputbox">

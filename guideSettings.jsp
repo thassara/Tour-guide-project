@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
+
+    <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -11,81 +12,61 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
-     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/guidestyle.css">
 </head>
 
 <body>
 <section class="header">
-    <a href="home1.jsp" class="logo"> Mytravel.</a>
+    <a href="home1.html" class="logo"> Mytravel.</a>
     <div class="search-box">
         <button class="btn-search" onclick="search()"><i class="fas fa-search"></i></button>
         <input id="searchText" type="text" class="input-search" placeholder="Type to Search...">
     </div> 
     
     <nav class="navbar">
-        <a href="home1.jsp">Home</a>
-  
-     <form action="Package_readServlet" method="post"><input type="submit" value="Package" class="nna"></form>
-
-
-        <a href="guide.jsp">Guides</a>
-        <a href="about.jsp">About</a>
-        <a href="review.jsp">Review</a>
-           <div class="dropdown">
-            <button class="dropbtn"><i ></i>Admins</button>
-            <div class="dropdown-content">
-                <a href="#">Admin</a>
-                <a href="PackageLogin.jsp">Package Manager</a>
-               
-            </div>
-        </div>
-        <button class="button"><a href="#"></a>Sign in</button>
+        <a href="home1.html">Home</a>
+        <a href="Packages.html">Packages</a>
+        <a href="guide.html">Guides</a>
+        <a href="about.html">About</a>
+        <a href="review.html">Review</a>
+        <button class="button"><a href="#"></a>Log in</button>
     </nav>
-
 
     <div id="menu-btn" class="fas fa-bars"></div>
 
 </section>
 
 
-<div class="heading" style="background:url(images/img23.jpg) no-repeat">
-<h1>Package control</h1>
+<div class="shheading" style="background:url(images/img45.jpg) no-repeat">
+<h1> control</h1>
 </div>
 
-<section class="pack">
-    <h1 class="heading-title">add new package</h1>
-    <form name="new-pack" action="Package_insertServlet" method="post" class="new-pack" onsubmit="validateForm()">
-     <div class="flex">
-         <div class="inputbox">
-           <Span>package name</Span>
-           <input type="text" placeholder="enter pack name" name="name">
-         </div>
-
-          <div class="inputbox">
-            <Span>package Price USD $</Span>
-            <input type="number" placeholder="enter price" name="price">
-          </div>
-
-          <div class="inputbox">
-            <Span>Duration</Span>
-            <input type="number" placeholder="enter Duration" name="Duration">
-          </div>
-
-          <div class="inputbox">
-            <Span>images</Span>
-            <input type="file" placeholder="drop image" name="images">
-          </div>
-
-          <div class="inputbox">
-            <Span>package details</Span>
-            <textarea  name="details" rows="6" cols="75"></textarea>
-          </div>
-
-      </div>
+<section class="packages">
     
-      <input type="submit" name="send" id="" class="btn" value="submit">
-   </form>
+    <div class="box-container">
+        <div class="box" style="width: 350px; margin-left: 20%;">
+
+            <div class="content">
+                <a href="${Guiupdate}"> <input type="submit" value="Update" class="shbtn1"></a>
+                <a href="guideUpdate.html" class="shbtn1">Update</a>
+            </div>
+        </div>
+
+        <div class="box" style="width: 350px; margin-left: 20%;">
+            <div class="content">
+                <p></h2></p>
+                <a href="" class="shbtn2">Delete</a>
+            </div>
+        </div>
+
+      
+
+
+  
 </section>
+
+       
+
 
 
 <section class="footer">
@@ -129,7 +110,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+     <script src="js/guideScript.js"></script>
 </body>
 
 </html>

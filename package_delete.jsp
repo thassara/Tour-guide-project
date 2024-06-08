@@ -28,14 +28,26 @@
 				placeholder="Type to Search...">
 		</div>
 
-		<nav class="navbar">
-			<a href="home1.jsp">Home</a> <a href="Packages.jsp">Packages</a> <a
-				href="guide.html">Guides</a> <a href="about.html">About</a> <a
-				href="review.html">Review</a><a href="control_page.html">Admin</a>
-			<button class="button">
-				<a href="#"></a>Log in
-			</button>
-		</nav>
+	   <nav class="navbar">
+        <a href="home1.jsp">Home</a>
+  
+     <form action="Package_readServlet" method="post"><input type="submit" value="Package" class="nna"></form>
+
+
+        <a href="guide.jsp">Guides</a>
+        <a href="about.jsp">About</a>
+        <a href="review.jsp">Review</a>
+           <div class="dropdown">
+            <button class="dropbtn"><i ></i>Admins</button>
+            <div class="dropdown-content">
+                <a href="#">Admin</a>
+                <a href="PackageLogin.jsp">Package Manager</a>
+               
+            </div>
+        </div>
+        <button class="button"><a href="#"></a>Sign in</button>
+    </nav>
+
 
 		<div id="menu-btn" class="fas fa-bars"></div>
 

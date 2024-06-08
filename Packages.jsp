@@ -29,14 +29,25 @@
 				placeholder="Type to Search...">
 		</div>
 
-		<nav class="navbar">
-			<a href="home1.jsp">Home</a> <a href="Packages.jsp">Packages</a> <a
-				href="guide.html">Guides</a> <a href="about.html">About</a> <a
-				href="review.html">Review</a><a href="adminControl.html">Admin</a>
-			<button class="button">
-				<a href="#"></a>Log in
-			</button>
-		</nav>
+	   <nav class="navbar">
+        <a href="home1.jsp">Home</a>
+  
+     <form action="Package_readServlet" method="post"><input type="submit" value="Package" class="nna"></form>
+
+
+        <a href="guide.jsp">Guides</a>
+        <a href="about.jsp">About</a>
+        <a href="review.jsp">Review</a>
+           <div class="dropdown">
+            <button class="dropbtn"><i ></i>Admins</button>
+            <div class="dropdown-content">
+                <a href="#">Admin</a>
+                <a href="PackageLogin.jsp">Package Manager</a>
+               
+            </div>
+        </div>
+        <button class="button"><a href="#"></a>Sign in</button>
+    </nav>
 
 		<div id="menu-btn" class="fas fa-bars"></div>
 
@@ -63,8 +74,9 @@
 						<h3>${pck.name}</h3>
 						<p>${pck.details}</p>
 						<h2 class="details">
-							Duration: ${pck.duration} days <br> Price: USD ${pck.price}
+							Duration: ${pck.duration} days <br> Price: USD ${pck.price} <br>
 						</h2>
+						<h4 style="font-size:15px;">Discount Rate: ${pck.rate}%    Code: ${pck.dcode} <br></h4> 
 						<button class="btn" onclick="openform()"> book</button>
 					</div>
 				</div>
@@ -86,7 +98,7 @@
                 <div class="formb-header">
                     <h1>Make Your reservation</h1>
                 </div>
-                <form action="">
+                <form action="BookingInsertServlet" method="post">
                     <div class="elem-group">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="Guest name" class="binput">
@@ -103,20 +115,7 @@
                         <label for="email">Email</label>
                         <input type="mail" name="email" id="email" placeholder="Guest name" class="binput">
                     </div>
-                    <div class="elem-group ">
-                        <label for="Dcode">Discount code</label>
-                        <input type="text" name="Dcode" id="Dcode" placeholder="discount code" class="binput">
-                    </div>
-                    <button class="btn">Show Amount</button>
-                    <hr>
-                    <div class="elem-group inlined">
-                        <label for="amount">Normal Amount</label>
-                        <input type="text" name="amount" id="amount" class="binput">
-                    </div>
-                    <div class="elem-group inlined">
-                        <label for="Damount">Discount after Amount</label>
-                        <input type="text" name="Damount" id="Damount" class="binput">
-                    </div>
+            
                     <input type="submit" name="submit" class="btn">
                    
                 </form>
