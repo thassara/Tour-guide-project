@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+
+.inputfield{
+	width:100%;
+	padding:12px 20px;
+	margin:8px 0;
+	border:1px solid white;
+	border-radius:4px;
+	box-sizing:border-box;
+	
+}
+
+.registration_form{
+    border-style: double;
+    border-color: black;
+    border-radius: 15px;
+	background-color:#ffd24d;
+	padding:10px;
+	margin :auto;
+	width:900px;
+	margin-bottom: 5%;
+}
+
+.r_form{
+	text-align:center;
+    margin-top: 5px;
+	padding-top: 5%;
+}
+
+.submitbtn{
+		height: 45px;
+		margin: 35px;
+		height: 100%;
+		width: 90%;
+		border-radius: 5px;
+		border: none;
+		color: #040000;
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		background: linear-gradient(135deg, #df9c0a, #df9c0a);
+	   background: linear-gradient(-135deg, #df9c0a, #df9c0a);
+	   
+}
+
+.submitbtn:hover{
+    opacity: 1;
+}
+
+body{
+	padding-top: 5%;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }

@@ -122,6 +122,12 @@ section {
 	color: var(--black);
 
 }
+.header .navbar .nna {
+	font-size: 2rem;
+	margin-left: 2rem;
+	color: var(--black);
+
+}
 
 .header .navbar .nb {
 	font-size: 2rem;
@@ -137,6 +143,24 @@ section {
 .header .navbar .nd:hover {
 	color: var(--main-color);
 }
+.header .navbar form {
+    display: inline-block;
+}
+
+.header .navbar form input[type="submit"] {
+    background: none;
+    border: none;
+    color: var(--black);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+.header .navbar form input[type="submit"]:hover {
+    color: var(--main-color);
+}
 
 #menu-btn {
 	font-size: 2.5rem;
@@ -144,6 +168,8 @@ section {
 	color: var(--black);
 	display: none;
 }
+
+
 
 .button {
 	display: inline-block;
@@ -277,6 +303,48 @@ section {
 	background: rgba(0, 0, 0, 0.7);
 	/* Darken the background color on hover */
 	background: var(--main-color);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 10px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px; /* Adjust padding if needed */
+    text-decoration: none;
+    display: block;
+    font-size: 10px; /* Adjust font size */
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background-color: transparent;
+    color: var(--black);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding-right: 0; 
+padding: 10px;
 }
 
 
